@@ -51,7 +51,7 @@ function Feeds({ setVideos, query, isOpen }) {
             className="card w-[350px] h-[300px] border-1 shadow-2xl shadow-gray-600"
             key={videoId}
           >
-            <img src={thumbnail} alt={title} className="w-[60%]" />
+            <img src={thumbnail} alt={title} className="w-[full] h-[55%]" />
             <h3 className="font-medium text-xl w-full">{title}</h3>
             <h2 className="font-medium">{author}</h2>
             <span className="mr-2">{viewCount} views</span>
