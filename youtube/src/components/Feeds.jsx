@@ -48,7 +48,7 @@ function Feeds({ setVideos, query, isOpen }) {
         return (
           <Link
             to={`/video/${videoId}`}
-            className="card w-[350px] h-[230px] border-1 shadow-2xl shadow-gray-600"
+            className="card w-[350px] h-[350px] border-1 shadow-2xl shadow-gray-600"
             key={videoId}
           >
             <img src={thumbnail} alt={title} className="w-full" />
