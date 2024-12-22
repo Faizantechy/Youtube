@@ -37,7 +37,7 @@ const NavBar = ({ setSideBar, setQuery, setIsopen, isOpen }) => {
 
       {/* Red "V" for very small screens */}
       <div className="logo-menu flex gap-2 items-center sm:hidden">
-        <span className="text-red-500 font-bold text-2xl">V</span>
+        <span className="text-red-500 font-bold text-2xl">ViD</span>
       </div>
 
       {/* Search Bar */}
