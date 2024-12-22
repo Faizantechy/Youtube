@@ -26,7 +26,7 @@ function Feeds({ setVideos, query, isOpen }) {
 
   return (
     <div
-      className={`ml-[10.2rem] py-2  gap-y-4 w-full h-[923vh] px-2  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-x-0  mt-12 ${
+      className={`lg:ml-[10.2rem] py-2  gap-y-4 w-full h-[923vh] px-2  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-x-0  mt-12 ${
         isOpen ? "bg-black text-white" : "bg-white"
       }`}
     >
