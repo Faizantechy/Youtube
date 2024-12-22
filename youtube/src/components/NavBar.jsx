@@ -42,7 +42,7 @@ const NavBar = ({ setSideBar, setQuery, setIsopen, isOpen }) => {
 
       {/* Search Bar */}
       <div className="searchbar lg:mr-0 mr-5">
-        <div className="lg:w-[440px] w-[280px] sm:w-[120px] px-2 rounded-xl flex border-2 border-gray-400">
+        <div className="lg:w-[440px] h-[280px] sm:w-[120px] px-2 rounded-xl flex border-2 border-gray-400">
           <input
             type="text"
             className="w-full bg-transparent border-none outline-none"
