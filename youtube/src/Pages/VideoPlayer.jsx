@@ -63,7 +63,7 @@ const VideoPlayer = ({ videos, isOpen }) => {
   return (
     <div className={`flex flex-col lg:flex-row w-full ${isOpen?'bg-black text-white':'bg-white'}`}>
       {/* Video and Comments Section */}
-      <div className="flex flex-col lg:w-2/3 bg-white p-4 mt-10 lg:mt-12">
+      <div className="flex flex-col lg:w-2/3 w-full bg-white mt-10 lg:mt-12">
         {/* Video Section */}
         <div className="aspect-w-16 aspect-h-9 bg-black mb-4">
           <iframe
@@ -71,7 +71,7 @@ const VideoPlayer = ({ videos, isOpen }) => {
             title="YouTube video player"
             frameBorder="0"
             allowFullScreen
-            className="w-full lg:h-[420px] h-[240px] object-cover rounded-xl"
+            className="w-full  lg:h-[420px] h-[240px] object-cover rounded-xl"
           ></iframe>
         </div>
 
