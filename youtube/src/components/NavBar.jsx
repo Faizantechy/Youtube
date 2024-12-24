@@ -5,8 +5,18 @@ import logo from "../assets/logo.png";
 import more from "../assets/more.png";
 import upload from "../assets/upload.png";
 import jack from "../assets/jack.png";
+import { useLocation, useParams } from "react-router-dom";
+
+
+
+
+
+
 
 const NavBar = ({ setSideBar, setQuery, setIsopen, isOpen }) => {
+
+  const {pathname}=useLocation()
+console.log(location, 'LOCATION')
   const [value, setValue] = useState("");
 
 
@@ -14,7 +24,12 @@ const NavBar = ({ setSideBar, setQuery, setIsopen, isOpen }) => {
     setQuery(value);
   }
 
-  return (
+  if (pathname.startsWith("/video/")) {
+    return null; // Don't render the Navbar for video pages
+  }
+
+
+  return pathname!=="/video/:videoId" && (
     <div className={`w-full flex items-center justify-between lg:px-4 py-2 border-b-1 shadow-xl fixed ${isOpen ? 'bg-black text-white' : 'bg-white'}`}>
 <div className="logo-menu flex gap-2 items-center">
   {isOpen ? (

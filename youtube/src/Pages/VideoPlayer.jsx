@@ -9,6 +9,8 @@ const VideoPlayer = ({ videos, isOpen }) => {
   const [userComments, setUserComments] = useState([]);
   const [feeds, setFeeds] = useState([]);
 
+  const [channelId,setChannelId]=useState('')
+
   const selectedVideo = videos.filter(
     (video) => String(video.videoId) === videoId
   );
@@ -50,6 +52,8 @@ const VideoPlayer = ({ videos, isOpen }) => {
     }
   };
 
+
+
   useEffect(() => {
     getComments();
   }, [videoId]);
@@ -63,7 +67,7 @@ const VideoPlayer = ({ videos, isOpen }) => {
   return (
     <div className={`flex flex-col lg:flex-row w-full ${isOpen?'bg-black text-white':'bg-white'}`}>
       {/* Video and Comments Section */}
-      <div className="flex flex-col lg:w-2/3 w-full bg-white mt-10 lg:mt-12">
+      <div className="flex flex-col lg:w-2/3 w-full bg-white  lg:mt-12">
         {/* Video Section */}
         <div className="aspect-w-16 aspect-h-9 bg-black mb-4">
           <iframe
@@ -84,7 +88,7 @@ const VideoPlayer = ({ videos, isOpen }) => {
                 alt="Channel Icon"
                 className="w-10 h-10 rounded-full"
               />
-              <div className="flex gap-5">
+              <div className="flex gap-[4rem]">
                 <div className="div flex items-center">
                   <h2 className="font-semibold">{selectedVideo.author}</h2>
                   <span className="text-gray-600 text-medium font-semibold">
